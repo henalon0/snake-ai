@@ -1,3 +1,5 @@
+![](overview.gif)
+
 # 🐍 Snake AI
 
 Snake AI is a project that implements deep reinforcement learning to train an agent to play the classic Snake game. The agent learns to navigate the game environment, avoiding collisions with the snake's own body and walls while maximizing its score by consuming food.
