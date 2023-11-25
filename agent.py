@@ -65,7 +65,7 @@ class Agent:
             game.food.x < game.head.x,  # food left
             game.food.x > game.head.x,  # food right
             game.food.y < game.head.y,  # food up
-            game.food.y > game.head.y  # food down
+            game.food.y > game.head.y   # food down
             ]
 
         return np.array(state, dtype=int)
@@ -125,7 +125,7 @@ def train():
         agent.remember(state_old, final_move, reward, state_new, done)
 
         if done:
-            # train long memory, plot result
+            # train long memory
             game.reset()
             agent.n_games += 1
             agent.train_long_memory()
